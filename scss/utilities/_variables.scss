@@ -1,0 +1,67 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+$white: #fff;
+
+$color-headline-primary:#58e1c1;
+$color-primary-light: lighten($color-headline-primary, 10%);
+
+
+$color-headline-secondary: #777;
+$color-link: #51ddfc;
+$color-img-frame: #ccc;
+
+
+// Fonts
+$font-stack-primary: 'Lato', sans-serif;
+
+
+// Breakpoints
+$desktop-view: 768px;
+
+
+// Button colors
+$btn: (
+    'default': #51ddfc,
+    'error':  #e4757a,
+    'info' : #927bc1,
+    'success' : #63cc82,
+    'warning':  #fd7856
+);
+      
+
+// Theme colors
+$theme: (
+    'three': #deb2ee, // theme-three 
+    'four': #7ee6fd, // theme-four
+    'five': #88d9a0,  // theme-five
+    'six': #4da2bb, // theme-six
+    'seven': #ec9fa3, // theme-seven
+    'eight': #fd9f85, // theme-eight
+    'twelve': #80e8d1 // theme-twelve
+);
+
+
+// ======================================
+//  Mixin
+// ======================================
+
+@mixin button($map) {
+    @each $btn, $bg-color in $map {
+      &-#{$btn} {
+        background-color: $bg-color;
+      }
+    } 
+  }
+
+
+@mixin themes($map) {
+    @each $theme, $bg-color in $map {
+      &-#{$theme} {
+        background-color: $bg-color;
+      }
+    } 
+  }
+

@@ -1,0 +1,17 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// Utilities
+@import 'utilities/variables';
+
+// Component Styles
+@import 'components/buttons',
+        'components/images',
+        'components/layouts',
+        'components/nav';
+
+// Base Styles     
+@import 'base/base',
+        'base/normalize';
+
