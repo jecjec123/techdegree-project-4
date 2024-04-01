@@ -1,0 +1,20 @@
+// ======================================
+//  Mixin
+// ======================================
+
+@mixin button($map) {
+    @each $btn, $bg-color in $map {
+      &-#{$btn} {
+        background-color: $bg-color;
+      }
+    } 
+  }
+
+
+@mixin themes($map) {
+    @each $theme, $bg-color in $map {
+      &-#{$theme} {
+        background-color: $bg-color;
+      }
+    } 
+  }

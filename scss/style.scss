@@ -3,15 +3,10 @@
 // ======================================
 
 // Utilities
-@import 'utilities/variables';
-
-// Component Styles
-@import 'components/buttons',
-        'components/images',
-        'components/layouts',
-        'components/nav';
+@import 'utilities/index';
 
 // Base Styles     
-@import 'base/base',
-        'base/normalize';
+@import 'base/index';
 
+        // Component Styles
+@import 'components/index';

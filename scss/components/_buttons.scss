@@ -14,4 +14,25 @@
 
 .btn{
   @include themes($btn); //button bgcolor maps
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  background-color: $btn-default-light;
+}
+
+.btn-error:hover {
+  background-color: $btn-error-light;
+}
+
+.btn-info:hover {
+  background-color: $btn-info-light;
+}
+
+.btn-success:hover {
+  background-color: $btn-success-light;
+}
+
+.btn-warning:hover {
+background-color: $btn-warning-light;
 }
